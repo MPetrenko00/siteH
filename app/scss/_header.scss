@@ -149,7 +149,7 @@
 		left: 8px;
 		background: $white-color;
 		border-radius: 12px 12px 0 0;
-		transform: translateY(101%);
+		/*transform: translateY(101%);*/
 		&.active {
 			transform: translate(0);
 		}
@@ -173,6 +173,15 @@
 	}
 
 	&__nav-item {
+		text-align: center;
+		font-size: 24px;
+	    font-weight: 700;
+	    font-style: normal;
+		padding: 7px ;
+	}
+
+	&__nav-item li:hover a{
+		color: $regular-hover-color;
 	}
 
 	&__nav-link {

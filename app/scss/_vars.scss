@@ -34,3 +34,15 @@ $main-radis: 8px;
 	color: transparent;
 	background-clip: text;
 }
+
+.regular__text a{
+	color: $regular-color;
+}
+
+.active__text a{
+	color: $accent-color;
+}
+
+.regular__active__text a{
+	color: $regular-active-color;
+}
