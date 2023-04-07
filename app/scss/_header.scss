@@ -144,6 +144,8 @@
 
 	&__nav {
 		position: fixed;
+		padding: 12px 12px 0;
+		z-index: 20;
 		bottom: 0;
 		right: 8px;
 		left: 8px;
@@ -158,11 +160,19 @@
 			border-radius: unset;
 			background: transparent;
 			transform: translate(0);
+			padding: 0;
 		}
 	}
 
 	&__nav-close {
 		cursor: pointer;
+		width: 32px;
+		height: 32px;
+		background: $grey-color;
+		margin-left: auto;
+		@media (min-width: $breakpoint-md) {
+			display: none;
+		}
 	}
 
 	&__nav-list {
@@ -170,6 +180,11 @@
 			display: flex;
 			gap: 10px;
 		}
+	}
+
+	&__nav-item {
+		margin: 15px 0;
+		text-align: center;
 	}
 
 	/*&__nav-item {
@@ -185,9 +200,19 @@
 	}*/
 
 	&__nav-link {
+		display: block;
+		padding: 7px 0;
+		border-radius: $radius-lg;
+		background: $grey-color;
+		color: $regular-color;
 		text-decoration: none;
+		&.active {
+			color: $accent-color;
+		}
 		@media (min-width: $breakpoint-md) {
 			color: $white-color;
+			padding: 0;
+			background: transparent;
 		}
 	}
 
