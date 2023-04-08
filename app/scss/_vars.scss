@@ -35,3 +35,9 @@ $radius-lg: 12px;
 	color: transparent;
 	background-clip: text;
 }
+
+.second-title {
+	@include gradient-text;
+	color: transparent;
+	background-clip: text; 
+}

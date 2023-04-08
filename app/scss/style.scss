@@ -4,4 +4,9 @@
 @import 'global';
 @import 'header';
 @import 'skill';
+@import 'cards';
+
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import 'team';
 

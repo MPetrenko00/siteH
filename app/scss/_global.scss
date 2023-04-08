@@ -39,6 +39,13 @@ body {
 	}
 }
 
+.hidden {
+	width: 0;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+}
+
 .main-title {
 	font-weight: 700;
 	font-size: 38px;
