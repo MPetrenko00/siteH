@@ -35,6 +35,11 @@
 	}
 
 	&__inner-link {
+		text-decoration: none;
+		color: $regular-color;
+		font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
 	}
 
 	&__inner-title {
