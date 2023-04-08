@@ -14,6 +14,10 @@
 	}
 
 	&__head {
+		@media (min-width: $breakpoint-xl) {
+			position: relative;
+			margin: 50px 0 0;
+		}
 	}
 
 	&__social {
@@ -29,6 +33,11 @@
 			background: transparent;
 			justify-content: flex-start;
 			gap: 18px;
+		}
+
+		@media (min-width: $breakpoint-xl) {
+			justify-content: flex-end;
+			margin: 0;
 		}
 	}
 
@@ -83,17 +92,42 @@
 			font-size: 26px;
 			line-height: 24px;
 			color: $accent-color;
+
+			@media (min-width: $breakpoint-xl) {
+				display: none;
+			}
 		}
 
 		span + span {
 			font-size: 20px;
 			color: $white-color;
+
+			@media (min-width: $breakpoint-xl) {
+				display: none;
+			}
+		}
+
+		@media (min-width: $breakpoint-xl) {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(-50%);
 		}
 	}
 
 	&__logo-link {
-		width: 69px;
-		height: 32px;
+
+		@media (min-width: $breakpoint-md) {
+			width: 69px;
+			height: 32px;
+		}
+
+		@media (min-width: $breakpoint-xl) {
+			width: 130px;
+			height: 60px;
+		}
+
+
 	}
 
 	&__logo-logo {
@@ -179,6 +213,10 @@
 		@media (min-width: $breakpoint-md) {
 			display: flex;
 			gap: 10px;
+		}
+
+		@media (min-width: $breakpoint-xl) {
+			justify-content: flex-end;
 		}
 	}
 
