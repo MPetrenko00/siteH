@@ -5,6 +5,8 @@
 	position: relative;
 
 
+
+
 	&__slide {
 		background: $grey-alt-color;
 		border-radius: 12px;
@@ -111,6 +113,7 @@
 	&__pagination {
 		&.swiper-pagination  {
 			bottom: 0;
+			padding: 30px;
 		}
 
 		.swiper-pagination-bullet {
