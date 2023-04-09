@@ -1,23 +1,38 @@
 .section {
-    &__cards-tab{
+    &__cards-tab {
         font-size: 0;
     }
 
-    &__card{
+    &__card {
         display: inline-block;
         font-size: 16px;
         width: 400px;
         padding: 10px;
     }
 
-    &__card-item{
-        padding: 3px;
+    &__card-item {
+        padding: 2px;
+
+        h2 {
+            color: $regular-color;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+    &__card-text{
+        color: $white-color;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
     }
 
     &__card-icon {
         height: 64px;
-        width: 64px;
-    
+        width: 64px
     }
 
 
@@ -28,16 +43,16 @@
 
 
     &__inner {
-		margin-bottom: 60px;
-	}
+        margin-bottom: 60px;
+    }
 
-	
+
 }
 
 .second-title {
-	font-weight: 700;
-	font-size: 38px;
-	line-height: 46px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
     margin-bottom: 30px;
 }
 
