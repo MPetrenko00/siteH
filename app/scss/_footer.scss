@@ -1,0 +1,152 @@
+.footer{
+    &__container {
+	}
+
+	&__main {
+		min-height: 50vh;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+	}
+
+	&__head {
+		@media (min-width: $breakpoint-xl) {
+			position: relative;
+			margin: 50px 0 0;
+		}
+	}
+
+	&__social {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 15px;
+		@media (min-width: $breakpoint-md) {
+			padding: 10px 0;
+			justify-content: flex-start;
+			gap: 18px;
+		}
+	}
+
+
+	&__social-adress {
+		display: none;
+		@media (min-width: $breakpoint-md) {
+			display: block;
+		}
+	}
+
+	&__social-map {
+		color: $regular-color;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	&__contact-faceb {
+		display: none;
+		@media (min-width: $breakpoint-md) {
+			display: block;
+			fill: $regular-color;
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+    &__company {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 15px;
+		margin: 0 -30px 15px;
+		@media (min-width: $breakpoint-md) {
+			margin: 0 0 30px;
+			padding: 10px 0;
+			justify-content: flex-start;
+		}
+
+        @media (min-width: $breakpoint-xl) {
+			justify-content: flex-end;
+			margin: 0;
+		}
+	}
+
+    &__inner-company {
+		display: none;
+        text-decoration: none;
+        color: $grey-color-text;
+		@media (min-width: $breakpoint-md) {
+			display: block;
+		}
+	}
+
+    &__contact{
+        display: flex;
+		justify-content: space-between;
+        align-items: center;
+		padding: 10px 15px;
+		background: rgba(245, 245, 250, 0.2);
+		margin: 0 -30px 15px;
+		@media (min-width: $breakpoint-md) {
+			margin: 0 0 30px;
+			padding: 10px 0;
+			background: transparent;
+			justify-content: flex-start;
+		}
+    }
+
+
+
+    &__contact-phone{
+        text-decoration: none;
+        color: $regular-color;
+    }
+
+    &__contact-email{
+        text-decoration: none;
+    }
+
+}
+
+.footer-social {
+
+	&__item {
+		position: relative;
+		&::before {
+			@media (min-width: $breakpoint-md) {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: -12px;
+				transform: translate(0, -50%);
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: $grey-color-text;
+				pointer-events: none;
+			}
+		}
+	}
+}
+
+
+.footer-contact{
+
+    &__item {
+		position: relative;
+		&::before {
+			@media (min-width: $breakpoint-md) {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: -12px;
+				transform: translate(0, -50%);
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: $grey-color-text;
+				pointer-events: none;
+			}
+		}
+	}
+
+}
