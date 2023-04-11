@@ -6,9 +6,6 @@
         justify-content: center;
     }
 
-    &__inner{
-
-    }
 
     &__text-title{
         text-align: center;
@@ -56,7 +53,6 @@
             height: 120px;
 		}
       
-        background: rgb(86, 65, 207);
     }
 
     
@@ -127,13 +123,12 @@
         flex: 1;
         order: 6;
         height: 100%;
-        background: $white-color;
+        background: #E2E2E4;
 
         img{
             height: 48px;
             max-width: 100%;
         }
-
     }
 
     &__card-item-7{
@@ -147,18 +142,21 @@
             max-width: 100%;
         }
 
+
     }
 
     &__card-item-8{
         flex: 1;
         order: 8;
         height: 100%;
-        background: $white-color;
+        background: #DCF3F9;
 
         img{
             height: 76px;
             max-width: 100%;
         }
+
+   
 
     }
 
@@ -166,12 +164,13 @@
         flex: 1;
         order: 9;
         height: 100%;
-        background: $white-color;
+        background: #EAEAEA;
 
         img{
             height: 60px;
             max-width: 100%;
         }
+
     }
 
     &__card-item-10{
