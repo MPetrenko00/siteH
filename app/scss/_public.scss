@@ -28,6 +28,7 @@
         font-size: 16px;
         line-height: 19.5px;
         color: $regular-color;
+        margin-bottom: 15px;
     }
 
     &__card-text{
@@ -36,6 +37,10 @@
         line-height: 22px;
         color: $black-color;
         margin-top: 34px;
+    }
+
+    &__card-box{
+        margin: 30px;
     }
 
 
@@ -56,6 +61,15 @@
         font-weight: 700;
         font-size: 14px;
 	}
+
+    &__number{
+        color: $regular-color;
+        font-weight: 700;
+        font-size: 12px;
+        color: $grey-color-text;
+        line-height: 14.63px;
+        margin-bottom: 15px;
+    }
 
 
 	&__element {
