@@ -80,6 +80,11 @@
 		}
 	}
 
+	&__faceb{
+		@media screen and (max-width: $breakpoint-md) {
+			display: none;
+		}
+	}
 	&__logo {
 		position: relative;
 		display: flex;
@@ -202,10 +207,27 @@
 		cursor: pointer;
 		width: 32px;
 		height: 32px;
-		background: $grey-color;
 		margin-left: auto;
 		@media (min-width: $breakpoint-md) {
 			display: none;
+		}
+
+	}
+
+	&__nav-cross{
+		&::before, &::after {
+			content: "";
+			 position: absolute;
+			 width: 24px;
+			 height: 3px;
+			 background: #EC6F5D;
+			 top: 8%;
+		}
+        &::before {
+			transform: rotate(45deg);
+		}
+        &::after {
+			transform: rotate(-45deg);
 		}
 	}
 
@@ -223,6 +245,21 @@
 	&__nav-item {
 		margin: 15px 0;
 		text-align: center;
+
+		@media (max-width: $breakpoint-md) {
+			text-align: center;
+		    font-size: 24px;
+	        font-weight: 700;
+	        font-style: normal;
+		    padding: 7px ;
+
+			&:hover {
+				a{
+					color: $regular-hover-color;
+				}
+			}
+		}
+
 	}
 
 	/*&__nav-item {

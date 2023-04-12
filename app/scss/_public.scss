@@ -1,4 +1,5 @@
 .public{
+    background: $grey-color;
     margin-top: 30px;
     
     &__text-title{
@@ -30,9 +31,6 @@
         @media (max-width: $breakpoint-lg) {
             flex: 1 1 40%;
 		}
-
-
-
     }
 
     &__card > div + div{
