@@ -10,6 +10,7 @@
     &__container{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 
         @media (max-width: $breakpoint-md) {
             display: flex;
@@ -19,8 +20,30 @@
     }
 
     &__card{
-        height: 450px;
+        flex: 1 1 33%;
         padding: 15px;
+
+        @media (max-width: $breakpoint-md) {
+            flex: 1 1 50%;
+		}
+
+        @media (max-width: $breakpoint-lg) {
+            flex: 1 1 40%;
+		}
+
+
+
+    }
+
+    &__card > div + div{
+        @media (max-width: $breakpoint-md) {
+            flex: 100%;
+		}
+    }
+
+    &__card-item{
+        background: $white-color;
+        height: 100%;
     }
 
     &__card-title{
