@@ -45,3 +45,9 @@ const swiper = new Swiper('.swiper', {
 		clickable: true,
   },
 });
+
+
+/*function deContainer(){
+	document.getElementById("d").style.display = "none";
+	document.getElementById("f").style.display = "block";
+}*/
