@@ -1,6 +1,11 @@
 .public{
     background: $grey-color;
-    margin-top: 30px;
+    
+
+    @media (min-width: $breakpoint-xxl) {
+        margin-top: 60px;
+    }
+
     
     &__text-title{
         font-weight: 700;
@@ -12,6 +17,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        
 
         @media (max-width: $breakpoint-md) {
             display: flex;
@@ -42,6 +48,10 @@
     &__card-item{
         background: $white-color;
         height: 100%;
+
+        @media (max-width: $breakpoint-xxl) {
+            border-radius: $main-radis;
+        }
     }
 
     &__card-title{
@@ -77,6 +87,9 @@
     }
 
 
+    &__inner{
+         padding-top: 30px;
+    }
 
     &__inner-link {
 		text-decoration: none;
@@ -98,6 +111,7 @@
 	&__element {
 		position: relative;
 		padding-right: 18px;
+
 
 		&:after {
 			content: '';

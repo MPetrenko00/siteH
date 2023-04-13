@@ -1,7 +1,6 @@
 .footer {
 	background: $grey-color;
-
-
+    
 	&__main {
 		display: flex;
 		flex-flow: column;
@@ -12,6 +11,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		border-top: 2px solid $grey-separator-color;
 
 		@media (min-width: $breakpoint-xl) {
 			margin: 50px 0 0;
