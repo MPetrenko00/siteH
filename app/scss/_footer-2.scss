@@ -1,10 +1,16 @@
 .footer2 {
 	background: $grey-color;
 	bottom: 0;
-	right: 0;
-	left: 0;
-	position: absolute;
-    
+    right: 0;
+    left: 0;
+    position: absolute;
+
+  @media (max-width: $breakpoint-lg) {
+    bottom: 0;
+      right: 0;
+      left: 0;
+      position: relative;
+  }
 	&__main {
 		display: flex;
 		flex-flow: column;
