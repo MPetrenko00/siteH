@@ -38,12 +38,25 @@
 		font-style: normal;
         font-weight: 700;
         font-size: 14px;
+
+
+			&:hover{
+				color: $red-color;
+			}
+
+			a{
+				&:hover{
+					border-color: $red-color;
+				}
+			}
+
 	}
 
 
 	&__element {
 		position: relative;
 		padding-right: 18px;
+
 
 		&:after {
 			content: '';
@@ -56,6 +69,7 @@
 			border-style: solid;
 			border-color: #24A3FF;
 			padding: 4px;
+
 		}
 	}
 

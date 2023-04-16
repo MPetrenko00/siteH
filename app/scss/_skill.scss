@@ -47,6 +47,10 @@
 		&.active {
 			@include gradient-text;
 		}
+
+		&:hover{
+			color: $red-color;
+		}
 	}
 
 	&__content {
