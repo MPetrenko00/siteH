@@ -43,6 +43,10 @@
 
 	&__social-adress {
 		display: block;
+		color:$main-color;
+		font-size: 16px;
+		font-weight: 400;
+
 
 		@media (max-width: $breakpoint-md) {
 			flex: 1 1 100%;
@@ -134,7 +138,9 @@
 
 	&__contact-phone {
 		text-decoration: none;
-		color: $regular-color;
+		color: $alt-color;
+		font-size: 16px;
+		font-weight: 700;
 
 		@media (max-width: $breakpoint-md) {
 			flex: 1 1 100%;
@@ -144,6 +150,9 @@
 
 	&__contact-email {
 		text-decoration: none;
+		color:$regular-color;
+		font-size: 16px;
+		font-weight: 700;
 
 		@media (max-width: $breakpoint-md) {
 			flex: 1 1 100%;
@@ -153,11 +162,12 @@
 
 }
 
+
+
 .footer-social {
 
 	&__item {
 		position: relative;
-
 		&::before {
 			@media (min-width: $breakpoint-md) {
 				content: '';
@@ -180,7 +190,6 @@
 
 	&__item {
 		position: relative;
-
 		&::before {
 			@media (min-width: $breakpoint-md) {
 				content: '';

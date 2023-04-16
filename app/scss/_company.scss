@@ -1,5 +1,7 @@
 .company{
 
+    gap: 60px;
+
     &__container{
         @media  screen and (min-width: $breakpoint-xxl) {
             max-width: 1720px;

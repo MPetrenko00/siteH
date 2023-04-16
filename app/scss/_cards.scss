@@ -6,8 +6,9 @@
     &__card {
         display: inline-block;
         font-size: 16px;
+        width: 100%;
         @media  screen and (min-width: $breakpoint-md) {
-            flex: 1 1 33%;
+            flex: 1 1 25%;
         }
 
         @media  screen and (min-width: $breakpoint-lg) {

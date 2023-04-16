@@ -2,16 +2,21 @@
 	color: $white-color;
 	fill: $white-color;
 	background: url('../images/hlegal_bg.svg') no-repeat 50%/auto 100%;
-
-
-	&__container {
+    
+	&--background{
+		background: none;
 	}
+
 
 	&__main {
 		min-height: 100vh;
 		display: flex;
 		flex-flow: column;
 		justify-content: space-between;
+	}
+
+	&--main{
+		min-height: 0;
 	}
 
 	&__head {
@@ -36,7 +41,7 @@
 			gap: 18px;
 		}
 
-		@media (min-width: $breakpoint-xl) {
+		@media (min-width: $breakpoint-lg) {
 			justify-content: flex-end;
 			margin: 0;
 		}
@@ -237,7 +242,7 @@
 			gap: 10px;
 		}
 
-		@media (min-width: $breakpoint-xl) {
+		@media (min-width: $breakpoint-lg) {
 			justify-content: flex-end;
 		}
 	}
@@ -246,9 +251,17 @@
 		margin: 15px 0;
 		text-align: center;
 
-		@media (max-width: $breakpoint-md) {
+		@media (min-width: $breakpoint-sm) {
 			text-align: center;
 		    font-size: 24px;
+	        font-weight: 700;
+	        font-style: normal;
+		    padding: 7px ;
+		}
+
+		@media (min-width: $breakpoint-md) {
+			text-align: center;
+		    font-size: 16px;
 	        font-weight: 700;
 	        font-style: normal;
 		    padding: 7px ;
@@ -287,9 +300,6 @@
 
 	&__inner {
 		text-align: center;
-	}
-
-	&__inner-title {
 	}
 
 	&__goto {

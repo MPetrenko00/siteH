@@ -17,6 +17,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        gap: 30px;
         
 
         @media (max-width: $breakpoint-md) {
@@ -27,8 +28,7 @@
     }
 
     &__card{
-        flex: 1 1 33%;
-        padding: 15px;
+        flex: 1 1 30%;
 
         @media (max-width: $breakpoint-md) {
             flex: 1 1 50%;
