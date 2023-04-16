@@ -30,11 +30,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 10px 15px;
+		padding: 10px 10px;
 		background: rgba(245, 245, 250, 0.2);
 		margin: 0 -30px 15px;
 		@media (min-width: $breakpoint-md) {
-			margin: 0 0 30px;
+			margin: 0 0 20px;
 			padding: 10px 0;
 			background: transparent;
 			justify-content: flex-start;
@@ -122,6 +122,7 @@
 			position: absolute;
 			top: 50%;
 			left: 0;
+			z-index: 5;
 			transform: translateY(-50%);
 		}
 	}
@@ -237,6 +238,7 @@
 
 
 	&__nav-list {
+		
 		@media (min-width: $breakpoint-md) {
 			display: flex;
 			gap: 10px;
@@ -269,14 +271,7 @@
 
 	}
 
-	/*&__nav-item {
-		text-align: center;
-		font-size: 24px;
-	    font-weight: 700;
-	    font-style: normal;
-		padding: 7px ;
-	}
-
+	/*
 	&__nav-item li:hover a{
 		color: $regular-hover-color;
 	}*/
