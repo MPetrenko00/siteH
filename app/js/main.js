@@ -34,17 +34,21 @@
 	})
 })();
 
+const isSwiper = document.querySelector('.swiper');
 
-const swiper = new Swiper('.swiper', {
-  loop: true,
-	spaceBetween: 30,
-	grabCursor: true,
-	speed: 900,
-  pagination: {
-    el: '.swiper-pagination',
-		clickable: true,
-  },
-});
+if(isSwiper){
+	const swiper = new Swiper('.swiper', {
+		loop: true,
+		  spaceBetween: 30,
+		  grabCursor: true,
+		  speed: 900,
+		pagination: {
+		  el: '.swiper-pagination',
+			  clickable: true,
+		},
+	  });
+}
+
 
 
 /*function deContainer(){
