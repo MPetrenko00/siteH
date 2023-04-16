@@ -1,12 +1,24 @@
 .box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+
+
     &__first{
        background: #CACADB;
-       width: 1400px;
+       width: 100%;
        height: 10px;
-       border-radius: 0 8px 8px 0;
+       border-radius: 0 0 12px 12px;
     }
 
     &__second{
-
+        background: #E7E7F2;
+        width: 100%;
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
