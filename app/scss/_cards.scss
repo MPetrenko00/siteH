@@ -6,15 +6,19 @@
     &__card {
         display: inline-block;
         font-size: 16px;
-        width: 100%;
-        padding: 10px;
         @media  screen and (min-width: $breakpoint-md) {
-            width: 50%;
+            flex: 1 1 33%;
         }
 
         @media  screen and (min-width: $breakpoint-lg) {
-            width: 33%;
+            flex: 1 1 30%;
         }
+    }
+
+    &__cards-tab{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 60px;
     }
 
     &__card-item {
