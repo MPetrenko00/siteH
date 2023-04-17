@@ -71,6 +71,10 @@
 		width: 24px;
 		height: 24px;
 
+		&:hover{
+			fill: $red-color;
+		}
+
 		@media (max-width: $breakpoint-md) {
 			flex: 1 1 100%;
 			order: 1;
@@ -153,6 +157,10 @@
 		color:$regular-color;
 		font-size: 16px;
 		font-weight: 700;
+
+		&:hover{
+			color: $red-color;
+		}
 
 		@media (max-width: $breakpoint-md) {
 			flex: 1 1 100%;

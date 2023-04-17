@@ -19,6 +19,10 @@
 		min-height: 0;
 	}
 
+	&__active{
+
+	}
+
 	&__head {
 		@media (min-width: $breakpoint-xl) {
 			position: relative;
@@ -83,6 +87,10 @@
 			fill: $white-color;
 			width: 24px;
 			height: 24px;
+
+			&:hover{
+				fill: $red-color;
+			}
 		}
 	}
 
@@ -267,14 +275,19 @@
 	        font-weight: 700;
 	        font-style: normal;
 		    padding: 7px ;
+
+			&:hover{
+				border-bottom: 2px solid $white-color;
+			}
+	
+			a{
+				&:hover{
+					color: $white-color;
+				}
+			}
 		}
 
 	}
-
-	/*
-	&__nav-item li:hover a{
-		color: $regular-hover-color;
-	}*/
 
 	&__nav-link {
 		display: block;
@@ -283,6 +296,7 @@
 		background: $grey-color;
 		color: $regular-color;
 		text-decoration: none;
+
 		&.active {
 			color: $accent-color;
 		}
@@ -305,6 +319,11 @@
 		border: 2px solid $white-color;
 		border-radius: 50%;
 		position: relative;
+
+		&:hover{
+			border-color: $red-color;
+		}
+
 		&::before {
 			content: '';
 			position: absolute;
@@ -315,6 +334,10 @@
 			border-bottom: 2px solid $white-color;
 			border-left: 2px solid $white-color;
 			transform: rotate(-45deg);
+		}
+
+		&:hover::before{
+			border-color: $red-color;
 		}
 	}
 

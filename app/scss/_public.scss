@@ -96,6 +96,10 @@
 		color: $regular-color;
         font-weight: 700;
         font-size: 14px;
+
+        &:hover{
+			color: $red-color;
+		}
 	}
 
     &__number{
@@ -124,6 +128,10 @@
 			border-style: solid;
 			border-color: #24A3FF;
 			padding: 4px;
+		}
+
+        &:hover:after{
+			border-color: $red-color;
 		}
 	}
 }
