@@ -19,10 +19,6 @@
 		min-height: 0;
 	}
 
-	&__active{
-
-	}
-
 	&__head {
 		@media (min-width: $breakpoint-xl) {
 			position: relative;
@@ -266,7 +262,13 @@
 		    font-size: 24px;
 	        font-weight: 700;
 	        font-style: normal;
-		    padding: 7px ;
+		    padding: 4px ;
+
+			a{
+				&:hover{
+					color: $white-color;
+				}
+			}
 		}
 
 		@media (min-width: $breakpoint-md) {
@@ -275,9 +277,10 @@
 	        font-weight: 700;
 	        font-style: normal;
 		    padding: 7px ;
+			border-bottom: 2px solid transparent;
 
 			&:hover{
-				border-bottom: 2px solid $white-color;
+				border-color: $white-color;
 			}
 	
 			a{
